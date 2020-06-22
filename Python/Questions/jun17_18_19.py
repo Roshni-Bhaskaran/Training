@@ -20,12 +20,13 @@ print(count)'''
 # In[2]:
 
 
-def alphanum(str1):      
+def alphanum(str1): 
+    s1=[]     
     for i in str1:
         a=i.isnumeric()
         if a==True:
-            #print(i,end='')   
-             return i     
+            s1+=i   
+    return s1     
             
 #alphanum('a7bh89')                
 
