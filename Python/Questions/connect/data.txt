@@ -1,0 +1,6 @@
+A1,History
+A2,Science
+A3,Chemistry
+A4,Biology
+A5,Civics
+A6,Social
