@@ -1,0 +1,14 @@
+Name: Roshni Bhaskaran
+SAP id:11833891
+1.select p.publish_id,publish_name,publish_city,publish_start_date,branches from publish p join author a on p.publish_id=a.publich_id 
+where publich_city !=author_city and publich_city=author_Country;
+2.select author_name,author_country,publish_city,publish_start_date,branches from publish p join author a on p.publish_id=a.publish_id
+where max(branches);
+5.select Author_name from author a join publish p on  p.publish_id=a.publish_id where autor_country!=publish_city;
+6.select author_id,author_name,author_country,author_city,p.publish_id from author a join publish on p.publish_id=a.publish_id
+where substr(p.publish_name,1,1)!=substr(a.author_name,1,1);
+9.select * from author where author_name=lower(author_name);
+
+
+ 
+ 
