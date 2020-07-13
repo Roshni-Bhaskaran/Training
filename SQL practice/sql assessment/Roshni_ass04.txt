@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Name:Roshni Bhaskaran
 Sap id:11833891
 
@@ -41,3 +42,48 @@ as Dept_name,sum(emp_sal)from department d join employee e on d.dept_id=e.dept_i
 
 
 
+=======
+Name:Roshni Bhaskaran
+Sap id:11833891
+
+1.select Dept_id,Dept_Name, 
+case when sum(emp_sal) != null then sum(emp_sal)
+when sum(emp_sal)= null then 0
+as sum_emp_sal from department d join employee e on d.dept_id=e.dept_id group by d.dept_id;
+
+2.select dept_id,
+case when dept_name != null then dept_name
+when dept_name =null then 'Others'
+as Dept_name,sum(emp_sal)from department d join employee e on d.dept_id=e.dept_id group by e.dept_id;
+
+3.select emp_id,emp_name,manager_id salary from employee where range(2700,10000);
+
+4.
+
+5.select emp_id,substr(emp_name,4) as emp_name from employee;
+
+6.select emp_id,substr(emp_name,charindex('h',emp_name)) as emp_name from employee;
+
+7.select emp_id,emp_name,max(salary) as salary from employee where salary<(select max(salary) from employee);
+
+8.select emp_id,emp_name,salary from(select emp_id,emp_name,salary from employee order by salary desc) where rownum<=3 order by salary;
+
+9.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 06ce908d6425d4482fe841a5d13edcee214d17f3

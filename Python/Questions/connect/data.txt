@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 A1,History
 A2,Science
 A3,Chemistry
 A4,Biology
 A5,Civics
+=======
+A1,History
+A2,Science
+A3,Chemistry
+A4,Biology
+A5,Civics
+>>>>>>> 06ce908d6425d4482fe841a5d13edcee214d17f3
 A6,Social

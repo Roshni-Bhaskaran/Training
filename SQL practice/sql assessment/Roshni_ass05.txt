@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Name: Roshni Bhaskaran
 Sap id:11833891
 
@@ -6,3 +7,13 @@ Sap id:11833891
 14.select substr(cust_name,charindex('a',charindex),-2) as cust_name from customer;
 15.select cust_name from customer where lower(cust_name) like '%a%' or lower(cust_name) like '%u%' or lower(cust_name) like '%r%';
 
+=======
+Name: Roshni Bhaskaran
+Sap id:11833891
+
+5.select salesman_name,cust_name,c.city,s.city from customer c join salesman s on c.salesman_id=s.salesman_id where c.city!=s.city
+13.select substr(cust_name,3,-3) as cust_name from customer;
+14.select substr(cust_name,charindex('a',charindex),-2) as cust_name from customer;
+15.select cust_name from customer where lower(cust_name) like '%a%' or lower(cust_name) like '%u%' or lower(cust_name) like '%r%';
+
+>>>>>>> 06ce908d6425d4482fe841a5d13edcee214d17f3

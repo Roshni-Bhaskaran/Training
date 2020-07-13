@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Name:Roshni Bhaskaran 
 Emp id:11833891
 
@@ -35,4 +36,43 @@ having -having clause is used when we use aggregate function
 
 15.group by is faster.
 
+=======
+Name:Roshni Bhaskaran 
+Emp id:11833891
+
+1.DBMS:
+Dbms will store data in files 
+Dbms will not have any relations
+RDBMS: 
+Rdbms will store the data in tables 
+Rdbms will have relation between the tables
+Rdbms has ACID property
+
+3.we can use count keyword to find the duplicates
+select count(id) from emp
+
+
+4.we can use distinct keywork to eliminate duplicates
+select distinct col_name from table_name;
+
+5.select * from (select first_name, salary from emp order by salary desc) where rownum <= 10;
+
+9.Both delete and truncate will removes the data in the tables but delete can be rolledback and we can use where condition
+ delete from table_name where condition;
+ Truncate table table_name;
+
+11.Primary key is used to identify data uniquely and it cannot be null
+   Foreign key maintain relationship between two tables primary key of one table will be the foregin key of another table
+
+12.
+Where- where clause is used to filter data with a condition 
+group by- group by is used to group a row with same data into a summary row
+order by -order by is used to order a result data. default order is ascending and need to use desc keyword for dec=scending order
+having -having clause is used when we use aggregate function
+
+13.select id,name from emp where id =(select id from emp group by dept having sal>avg(sal))
+
+15.group by is faster.
+
+>>>>>>> 06ce908d6425d4482fe841a5d13edcee214d17f3
 16.insert into table2 select * from table1; 
